@@ -27,3 +27,4 @@
 <br>
 
 <%= link_to 'New Tweet', new_tweet_path %>
+<td><%= link_to tweet.user.username, show_user_path(id: tweet.user.id) %></td>
