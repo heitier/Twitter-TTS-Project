@@ -4,11 +4,11 @@
 <p><%= @user.location %></p>
 <p><%= @user.bio %></p>
 
-<p>
+<!-- <p>
     <strong>User:</strong>
     <%= link_to @tweet.user.username, 
        show_user_path(id: @tweet.user.id) %>
-</p>
+</p> -->
 
 <p>
     <% if current_user.following.include?(@user.id) %>
