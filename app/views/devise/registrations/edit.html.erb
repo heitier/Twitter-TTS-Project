@@ -20,6 +20,23 @@
       <em><%= @minimum_password_length %> characters minimum</em>
     <% end %>
   </div>
+  <!-- same for both files -->
+
+<div class="form-group">
+  <%= f.text_field :name, placeholder: "Your Name", class: "form-control" %>
+</div>
+
+<div class="form-group">
+  <%= f.text_field :username, placeholder: "Choose a @username", class: "form-control" %>
+</div>
+
+<div class="form-group">
+  <%= f.text_field :location, placeholder: "Location", class: "form-control" %>
+</div>
+
+<div class="form-group">
+  <%= f.text_area :bio, placeholder: "Tell us about yourself...", class: "form-control" %>
+</div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
