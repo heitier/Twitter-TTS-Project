@@ -15,11 +15,11 @@
     <% @tweets.each do |tweet| %>
       <tr>
         <td><%= tweet.message.html_safe %></td>
-        <td><%= tweet.user.username %></td>
+        <td><%= link_to tweet.user.username, show_user_path(id: tweet.user.id) %></td>
         <td><%= link_to ' Show', tweet %></td>
         <td><%= link_to ' Edit', edit_tweet_path(tweet) %></td>
         <td><%= link_to ' Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to tweet.user.username, show_user_path(id: tweet.user.id) %></td> 
+         
       </tr>
     <% end %>
   </tbody>
@@ -27,5 +27,5 @@
 
 <br>
 
-<%= link_to 'New Tweet', new_tweet_path %>
+<!-- <%= link_to 'New Tweet', new_tweet_path %> -->
 

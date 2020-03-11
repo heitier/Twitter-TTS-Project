@@ -4,11 +4,6 @@
 <p><%= @user.location %></p>
 <p><%= @user.bio %></p>
 
-<!-- <p>
-    <strong>User:</strong>
-    <%= link_to @tweet.user.username, 
-       show_user_path(id: @tweet.user.id) %>
-</p> -->
 
 <p>
     <% if current_user.following.include?(@user.id) %>
@@ -23,7 +18,7 @@
 <% @user.tweets.each do |tweet| %>
     <div>
         <p>@<%= @user.username %></p>
-	<p><%= tweet.message %></p>
+	<p><%= tweet.message.html_safe %></p>
     </div>
 <% end %>
 
