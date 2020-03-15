@@ -47,6 +47,7 @@ def following
   end
 end
 
+# this controller action
 def followers
   @user =  User.find(params[:id])
   @users = []

@@ -11,9 +11,9 @@ Rails.application.routes.draw do
 
   get 'all_users' => 'epicenter#all_users'
 
-  get 'following' => 'epicenter#following'
+  get 'user_followings' => 'epicenter#user_followings'
 
-  get 'followers' => 'epicenter#followers'
+  get 'user_followers' => 'epicenter#user_followers'
 
   resources :tweets
   devise_for :users
