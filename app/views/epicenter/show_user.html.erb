@@ -3,7 +3,7 @@
 <p><%= @user.name %></p>
 <p><%= @user.location %></p>
 <p><%= @user.bio %></p>
-<p><%=link_to "Following" </p>
+<!-- <p><%=link_to "Following" %></p> -->
 
 <p>
     <% if current_user.following.include?(@user.id) %>

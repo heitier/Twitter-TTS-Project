@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+$(document).on("turbolinks:load", function() {
     $('#unfollow_btn').hover(function(){
 
       $(this).removeClass('btn-primary');
@@ -8,5 +8,5 @@ $(document).on('turbolinks:load', function() {
       $(this).text("Following");
       $(this).removeClass('btn-danger');
       $(this).addClass('btn-primary');
-    });
+    })
   })
